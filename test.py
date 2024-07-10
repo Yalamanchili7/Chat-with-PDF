@@ -13,7 +13,7 @@ import pickle
 
 # Load environment variables from .env file
 load_dotenv()
-api_key = os.getenv("GOOGLE_API_KEY")
+api_key = st.secrets["GOOGLE_API_KEY"]
 
 # Configure Google Generative AI with the API key
 genai.configure(api_key=api_key)
